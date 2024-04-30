@@ -5,7 +5,7 @@ Java is a programming language and a platform. Java is a high level, robust, obj
 Java Example Let's have a quick look at Java programming example. A detailed description of Hello Java example is available in next page. 
 Simple.java 
 class Simple{ 
-    public static void main(String args[]){
+    public static void main(String args[]){ //public and static both are keywords in java and keywords are the reserved words. 
          System.out.println("Hello Java");
           } 
           } 
@@ -59,3 +59,40 @@ class Simple{
           
           -------------------------------------------------------------------------------------------------------- 
           Taking input from the user -
+          first import package where scanner class is present 
+          import java.util.*;
+          Scanner sc=new Scanner(System.in); //this is used to taking input 
+          int a=sc.nextInt(); //this belongs to which type of input you want..here I want integer type input
+          ------------------------------------------------------------------------------------------------------------------------
+          Loops:- Or we can say that Iterators.
+          If we want something happen again n again then we use loops.
+
+          Types:- 
+
+          1- for loop - 
+          for(initialisation; condition; incre/decrement){}
+          
+          2- while loop - 
+           intialiation;
+           while(check cond.){
+            print something;
+            increment/decrement;
+           }
+          3- do while loop - 
+          initialisation;
+          do{
+            print something;
+            increment/decrement;
+          }while(check cond.); //here in do while loop we always use terminator in the end of the while 
+          ---------------------------------------------------------------------------------------------------------------------------
+
+          Functions and Methods :- 
+
+          Function - function is a peace of code which takes input from the user and perform some operation and then produce output..
+          
+          SYNTAX - returnType functionName(type arg1, type arg2, type arg3....){ //here returnType would be anything like - int , float , string , void etc..It means which type of function you want to create. we can pass multiple arguments in one function and we can also pass different types of arguments in our function.
+            //perform some operations and print something...
+          } 
+          
+          Note:- One thing kept in mind in java function can return one type of value at a time..it means if we are creating integer type function then it can only return integer type value....
+          

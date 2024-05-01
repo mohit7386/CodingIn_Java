@@ -84,6 +84,67 @@ class Simple{
             print something;
             increment/decrement;
           }while(check cond.); //here in do while loop we always use terminator in the end of the while 
+--------------------------------------------------------------------------------------------------------------------------
+break statement
+
+In java, break statement is used when working with any kind of a loop or a switch statement. It breaks out of the loop or a switch statement and returns the control to the main body of the program. In the case of nested loops, it breaks the inner loop and control is returned to the outer loop.
+
+Example:
+
+public class JavaBreak {
+    public static void main(String[] args) {
+        for(int n=1; n<=20; n++) {
+            if(n%2 == 0) {
+                System.out.println(n);
+                if (n == 12) {
+                    break;
+                }
+            }
+        }
+    }
+}
+ 
+
+Output:
+
+2
+4
+6
+8
+10
+12
+ 
+
+continue statement
+The continue statement breaks the current iteration in the loop, and continues with the next iteration in the loop...
+
+Example:
+
+public class JavaContinue {
+    public static void main(String[] args) {
+        for(int n=1; n<=20; n++) {
+            if(n%2 == 0) {
+                if (n == 12) {
+                    continue;
+                }
+                System.out.println(n);
+            }
+        }
+    }
+}
+ 
+
+Output:
+
+2
+4
+6
+8
+10
+14
+16
+18
+20
           ---------------------------------------------------------------------------------------------------------------------------
 
           Functions and Methods :- 
@@ -95,4 +156,26 @@ class Simple{
           } 
           
           Note:- One thing kept in mind in java function can return one type of value at a time..it means if we are creating integer type function then it can only return integer type value....
-          
+
+Sample program - 
+//Write the function to print my name
+import java.util.*;
+
+public class Functions_In_Java {
+    public static void printMyName(String name) { // Decleration of a function and the function type is void
+        System.out.println("Your Name:-");
+        System.out.println(name); // printing the entered by the user
+        return; // work is complete then we return to the main function
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in); // taking input from the user
+        System.out.println("Enter Your Name:-");
+        String name = sc.nextLine(); // taking integer type input from the user
+        printMyName(name); // Calling the function
+        sc.close();
+    }
+
+}
+Methods :- Functions and methods both are same formarily there is a minor difference between these which is we can call functions directly and methods are called by the objects of the class are called methods..
+------------------------------------------------------------------------------------------------------------------------------

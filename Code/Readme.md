@@ -89,6 +89,9 @@ break statement
 
 In java, break statement is used when working with any kind of a loop or a switch statement. It breaks out of the loop or a switch statement and returns the control to the main body of the program. In the case of nested loops, it breaks the inner loop and control is returned to the outer loop.
 
+Note- 
+In Java, the break statement is used to exit from loops (like for, while, or do-while loops) or switch statements. It is not used to exit from the main method directly.
+
 Example:
 
 public class JavaBreak {
@@ -145,7 +148,163 @@ Output:
 16
 18
 20
-          ---------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------
+String Basics:-
+
+Strings in java is a sequence of characters that Is enclosed in double quotes. Whenever java comes across a String literal in the code, it creates a string literal with the value of string.
+
+Example:
+
+public class string {
+    public static void main(String[] args) {
+        String name;
+        name = "Diablo";
+        System.out.println("My name is " + name);
+    }
+}
+Output:
+
+My name is Diablo
+ 
+
+The same can be done using an array of characters.
+
+Example:
+
+public class string {
+    public static void main(String[] args) {
+        char[] name = {'D', 'i', 'a', 'b', 'l', 'o'};
+        String welcomeMsg = new String(name);  
+        System.out.println("Welcome " + welcomeMsg);
+    }
+}
+Output:
+
+Welcome Diablo
+ 
+
+Concatenate Strings:
+Concatenation between two strings in java is done using the + operator.
+
+Example:
+
+public class string {
+    public static void main(String[] args) {
+        String fname, lname;
+        fname = "Diablo";
+        lname = "Ramirez";
+        System.out.println(fname + " " + lname);
+    }
+}
+Output:
+
+Diablo Ramirez
+ 
+
+Alternatively, we can use the concat() method to concatenate two strings.
+
+Example:
+
+public class string {
+    public static void main(String[] args) {
+        String fname, lname;
+        fname = "Diablo";
+        lname = " Ramirez";
+        System.out.println(fname.concat(lname));
+    }
+}
+Output:
+
+Diablo Ramirez
+ 
+
+What if we concatenate string with an integer?
+
+Well concatenating a string and an integer will give us a string.
+
+Example:
+
+public class string {
+    public static void main(String[] args) {
+        String name;
+        int quantity;
+        quantity = 12;
+        name = " Apples";
+        System.out.println(quantity + name);
+    }
+}
+Output:
+
+12 Apples
+
+String Methods
+ 
+
+Here we will see some of the popular methods we can use with strings.
+
+ 
+
+length(): This method is used to find the length of a string.
+
+Example:
+
+public class string {
+    public static void main(String[] args) {
+        String quote = "To be or not to be";
+        System.out.println(quote.length());
+    }
+}
+Output:
+
+18
+ 
+
+indexOf(): This method returns the first occurrence of a specified character or text in a string.
+
+Example:
+
+public class string {
+    public static void main(String[] args) {
+        String quote = "To be or not to be";
+        System.out.println(quote.indexOf("be"));    //index of text
+        System.out.println(quote.indexOf("r"));     //index of character
+    }
+}
+Output:
+
+3
+7
+ 
+
+toLowerCase(): Converts string to lower case characters.
+
+Example:
+
+public class string {
+    public static void main(String[] args) {
+        String quote = "THOR: Love and Thunder";
+        System.out.println(quote.toLowerCase()); 
+    }
+}
+Output:
+
+thor: love and thunder
+ 
+
+toUpperCase(): Converts string to upper case characters.
+
+Example:
+
+public class string {
+    public static void main(String[] args) {
+        String quote = "THOR: Love and Thunder"  
+        System.out.println(quote.toUpperCase());     
+    }
+}
+Output:
+
+THOR: LOVE AND THUNDER
+---------------------------------------------------------------------------------------------------------------------------
 
           Functions and Methods :- 
 
@@ -179,3 +338,20 @@ public class Functions_In_Java {
 }
 Methods :- Functions and methods both are same formarily there is a minor difference between these which is we can call functions directly and methods are called by the objects of the class are called methods..
 ------------------------------------------------------------------------------------------------------------------------------
+Operators :- 
+ 
+Unary Operator, 
+Arithmetic Operator, -> +,-,/,*
+Shift Operator, -> >> <<
+Relational Operator, -> <= , >= , == , != 
+Bitwise Operator, -> 
+                      Bitwise AND -> & -> it checks both the condition whether it is true or false.
+                      Bitwise exclusive OR -> ^ -> it checks both the condition whether it is true or false.
+                      Bitwise inclusive OR -> | -> it checks both the condition whether it is true or false.
+
+Logical Operator, -> 
+                      Logical AND -> && - need to both the conditions to be true if any one of the conditions are false then this will not check the second condition..
+                      Logical OR -> || - running if only one value should be true it does not check the second condition when first condition will be true if the first condition is false then only it checks the another condition..
+
+Ternary Operator -> ?: -> (a<b)?a:b; ->Ternary Syntax
+Assignment Operator. -> a=b; here equal to sign is our assignment operator it's execution is right to left.

@@ -355,3 +355,6 @@ Logical Operator, ->
 
 Ternary Operator -> ?: -> (a<b)?a:b; ->Ternary Syntax
 Assignment Operator. -> a=b; here equal to sign is our assignment operator it's execution is right to left.
+-------------------------------------------------------------------------------------------------------------------------------
+Time Complexity:- 
+Relation Between Input Size and Running Time(Operations).

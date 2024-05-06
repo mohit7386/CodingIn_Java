@@ -358,3 +358,20 @@ Assignment Operator. -> a=b; here equal to sign is our assignment operator it's 
 -------------------------------------------------------------------------------------------------------------------------------
 Time Complexity:- 
 Relation Between Input Size and Running Time(Operations).
+-------------------------------------------------------------------------------------------------------------------------------
+Arrays :- 
+
+Colleection of items of the same data type in contigous(continuous) memory location  or we can say that list of items of the same data type...
+
+Benefit to the array:- 
+1- we can store the multiple numbers as much as you want which all are the same data type in contiguous memory location..
+2- We can access any element very fast with their respective index.
+3- Arrays can be used to store various types of data, including integers, floats, characters, or even custom objects, providing flexibility in programming.
+4- Arrays support common operations such as sorting, searching, and manipulation of elements, enabling efficient data processing.
+
+Defining an array :- 
+type[] arrayName = new type[size]; //decleration of the array and here new is the keyword which is used to take the space in the memory which describes ki you are creating the new keyword and you want space in the memory through the non-primitive data type...
+
+example - int[] marks=new int[3]; and the indexing in array starts from zero to (n-1) so the first element position will be start from zero and last element position will be n-1.
+So, here we have 3 elements in the array and we want to access the first element then we write as - 
+arrayName[index location]; = marks[0]; and so on for other array elements.....,ī 

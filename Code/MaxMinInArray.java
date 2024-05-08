@@ -20,7 +20,7 @@ public class MaxMinInArray {
         int min = Integer.MAX_VALUE; // Integer.MAX_VALUE represents the largest possible integer value that can be
                                      // stored in a variable in Java, which is 2,147,483,647.
 
-        for (int i = 1; i < size; i++) {
+        for (int i = 0; i < size; i++) {
             if (array[i] > max) {
                 max = array[i];
             }

@@ -8,9 +8,13 @@ public class String_Method1 {
         // same another method is toLowercase() which is converted your uppercase text
         // into the lowercase.
         String quote3 = "Hello World Namste! Jai Shree Ram! Radhe krishna!";
-        System.out.println("The index of your given text is: " + quote3.indexOf("Jai")); // indexOf method returns the
-                                                                                         // index of
-        // first occurence
+        System.out.println("The index of your first occurence of your given text is: " + quote3.indexOf("Jai")); // indexOf
+                                                                                                                 // method
+                                                                                                                 // returns
+                                                                                                                 // the
+        // index of
+        // first occurence means it returns the index position of the first letter so
+        // where it returns the index position of the letter 'j'
     }
 
 }

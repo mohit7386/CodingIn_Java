@@ -374,4 +374,63 @@ type[] arrayName = new type[size]; //decleration of the array and here new is th
 
 example - int[] marks=new int[3]; and the indexing in array starts from zero to (n-1) so the first element position will be start from zero and last element position will be n-1.
 So, here we have 3 elements in the array and we want to access the first element then we write as - 
-arrayName[index location]; = marks[0]; and so on for other array elements.....,ī 
+arrayName[index location]; = marks[0]; and so on for other array elements.....,
+====================================================================================================================================
+2D Arrays :- 
+
+A 2D array in Java is an array of arrays, meaning it's an array where each element is itself an array. This allows you to represent data in a grid-like structure with rows and columns.
+
+Initializing a 2D Array:
+You can initialize a 2D array in Java using the following syntax:
+
+java
+Copy code
+// Syntax for initializing a 2D array with specific values:
+dataType[][] arrayName = {
+    {val00, val01, ..., val0N},
+    {val10, val11, ..., val1N},
+    ...,
+    {valM0, valM1, ..., valMN}
+};
+
+// Example:
+int[][] matrix = {
+    {1, 2, 3},
+    {4, 5, 6},
+    {7, 8, 9}
+};
+Accessing Elements of a 2D Array:
+You can access elements of a 2D array using row and column indices. Remember that indices in Java start from 0.
+
+java
+Copy code
+// Accessing elements of a 2D array
+int element = arrayName[rowIndex][columnIndex];
+Length of a 2D Array:
+You can find the number of rows and columns in a 2D array using the length property:
+
+java
+Copy code
+int rows = arrayName.length; // Number of rows
+int cols = arrayName[0].length; // Number of columns (assuming all rows have the same length)
+Iterating Over a 2D Array:
+You can use nested loops to iterate over all elements of a 2D array:
+
+java
+Copy code
+for (int i = 0; i < rows; i++) {
+    for (int j = 0; j < cols; j++) {
+        // Access and process each element: arrayName[i][j]
+    }
+}
+Initializing an Empty 2D Array:
+If you want to initialize a 2D array without specifying initial values, you need to provide the dimensions:
+
+java
+Copy code
+dataType[][] arrayName = new dataType[rows][cols];
+For example:
+
+java
+Copy code
+int[][] emptyMatrix = new int[3][3]; // Creates a 3x3 2D array with all elements initi

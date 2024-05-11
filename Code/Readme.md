@@ -434,3 +434,17 @@ For example:
 java
 Copy code
 int[][] emptyMatrix = new int[3][3]; // Creates a 3x3 2D array with all elements initi
+-----------------------------------------------------------------------------------------------------------------------------------
+StringBuilder-
+
+In Java, StringBuilder is a class that provides a way to create mutable sequences of characters. Unlike the String class, which is immutable (meaning its value cannot be changed once it's created), StringBuilder allows you to modify the contents of the sequence without creating a new object each time.
+
+Here are some key points about StringBuilder:
+
+Mutable: StringBuilder objects are mutable, meaning you can change the contents of the string without creating a new object.
+
+Efficient: Since StringBuilder objects are mutable, they can be more efficient than using regular string concatenation, especially when dealing with large amounts of text.
+
+StringBuilder vs. StringBuffer: Java also provides another class called StringBuffer, which is similar to StringBuilder but is thread-safe (i.e., it can be used in multithreaded environments). StringBuilder is not thread-safe, but it is generally faster because it's not synchronized.
+
+Methods: StringBuilder provides methods for appending, inserting, deleting, replacing, and reversing characters in the sequence.

@@ -448,3 +448,109 @@ Efficient: Since StringBuilder objects are mutable, they can be more efficient t
 StringBuilder vs. StringBuffer: Java also provides another class called StringBuffer, which is similar to StringBuilder but is thread-safe (i.e., it can be used in multithreaded environments). StringBuilder is not thread-safe, but it is generally faster because it's not synchronized.
 
 Methods: StringBuilder provides methods for appending, inserting, deleting, replacing, and reversing characters in the sequence.
+---------------------------------------------------------------------------------------------------------------------------------
+Operator is a symbol that tells the compiler to perform some operations on the basis of which type of operator symbol you are using...
+ex- 1+2 -> so here 1 and 2 are operands and the '+' Sign is our operator which is arithematic operator.
+
+1) Arithematic Operator - Arithematic operator are those operator which is responsible to do mathematical calculations - +,-,*,/,%(This is our modulo operator which gives us remainder value when we divide any kind of number.). It perfomrs on two operands...
+*Unary Operator- ++ ,-- ->these operator perform on single operand 
+ex- a++ ,b-- (these both are post increment/decrement) ,++a , --b (these both are pre increment/decrement).
+
+2) Relational Operator - Relational Operator are those operator which is use to establish the relation between two operands...
+ex- == , < , > , <= , >=, != etc. these are relational operartors which is used to compare the values , checking the equality of the values and many more.
+
+3) Logical Operators - logical operators are those operators which is used to check the value is true or false logically 
+Types -> 
+(i) - Logical AND (&&) - If both conditions are true then only it works. It checks both the conditions is true or false if first condition is false then it doesnot check the another condition. 
+(ii) - Logical OR (||) -  it also checks the both conditions are true or false if any one condition is true then it gives the true result. otherwise it gives the false result..9
+(iii) - Logical NOT (!) - It reverse the statement if statement gives true then it gives the false and it's vice versa.
+
+4) Bitwise Operators - Bitwise operators are used to perform operations on individual bits of integer operands.Bitwise operators gives the output in bits. There are several bitwise operators in Java:-
+
+Bitwise AND (&): If both bits are 1, the result is 1. Otherwise, it's 0.
+Bitwise OR (|): If either bit is 1, the result is 1. If both are 0, the result is 0.
+Bitwise XOR (^): If both bits are different, the result is 1. If both bits are the same, the result is 0.
+Bitwise NOT (~): Inverts each bit. If it's 1, it becomes 0, and if it's 0, it becomes 1.
+Left Shift (<<): Moves all bits to the left by a specified number of positions. New bits entering from the right are filled with zeros.
+Right Shift (>>): Moves all bits to the right by a specified number of positions. The sign bit (the leftmost bit) is used to fill in new bits when shifting right.
+Unsigned Right Shift (>>>): Similar to right shift (>>), but the vacant bits are filled with zeros regardless of the sign bit.
+
+5) Assignment Operator - 
+= -> a=b; means b is stored in a execuition is right to left
++= -> a=a+b; means first additon happens then the sum of a and b is stored in the a.
+-= -> same as for all the assignment operators.
+*= -> same as for all the assignment operators.
+/= -> same as for all the assignment operators.
+-------------------------------------------------------------------------------------------------------------------------------------
+
+*Binary Number System - In mathematics we have decimal number system and in programming and computer wee have binary number system.
+-Mathematics we have numbers from 0 to 9 = 10 numbers means it has base 10 
+-Binary number we have 2 numbers - 0 and 1 and base 2
+
+Binary- 0 and 1 are binary base-2 numeral system 
+4 into binary = 100 -> we need to divide the number by 2 till and captures the remainder and divide till we get the remainder 1. after getting the remainder one write the remainder in reverse order like - 100 which is binary of 4.
+
+Binary to decimal - take an example of 4 binary number - 100 convert into decimal we need:-
+100 = 1*2^2+0*2^1+0*2^0 = so we get 4. 
+2^0 always gives the 1 and any number which has the power 0 it gives the result 1. and place value ke hisaab se 2 ki powers lagate jayenge.
+=====================================================================================================================================
+ASCII Values:- Uppercase Letters (A-Z):
+
+A: 65
+B: 66
+C: 67
+D: 68
+E: 69
+F: 70
+G: 71
+H: 72
+I: 73
+J: 74
+K: 75
+L: 76
+M: 77
+N: 78
+O: 79
+P: 80
+Q: 81
+R: 82
+S: 83
+T: 84
+U: 85
+V: 86
+W: 87
+X: 88
+Y: 89
+Z: 90
+Lowercase Letters (a-z):
+
+a: 97
+b: 98
+c: 99
+d: 100
+e: 101
+f: 102
+g: 103
+h: 104
+i: 105
+j: 106
+k: 107
+l: 108
+m: 109
+n: 110
+o: 111
+p: 112
+q: 113
+r: 114
+s: 115
+t: 116
+u: 117
+v: 118
+w: 119
+x: 120
+y: 121
+z: 122
+=====================================================================================================================================
+Bit Manipulation :- here with the help of bit manipulation we can do these four operations - get bit , set bit , clear bit , update bit.
+Bit Mask -  Bit mask ek aise technique hai jisme hum binary numbers ke specific bits ko manipulate karte hain, jaise ki aapne kaha, get bit, set bit, clear bit, aur update bit operations ke through. Yeh operations hume allow karte hain ki hum sirf chune hue bits ke saath interact karein, aur baaki ke bits ko as it is rakhein. Is tarah se, bit masking ek powerful tool hai jisse hum binary data ko control aur modify kar sakte hain, aur humare code ko optimize aur efficient banane mein madad karta hai. 
+1) Get Bit - 

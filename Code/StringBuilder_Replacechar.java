@@ -2,7 +2,7 @@
 //Replace the character using stringbuilder class and taking a string from the user 
 import java.util.*;
 
-public class Strings_Replacechar {
+public class StringBuilder_Replacechar {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the String which includes the letter e then I will replace e with i: ");

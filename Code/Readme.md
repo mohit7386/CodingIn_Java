@@ -550,7 +550,16 @@ w: 119
 x: 120
 y: 121
 z: 122
-=====================================================================================================================================
-Bit Manipulation :- here with the help of bit manipulation we can do these four operations - get bit , set bit , clear bit , update bit.
+====================================================================================================================================
+Bit Manipulation :- here with the help of bit manipulation we can do these four operations - get bit , set bit , clear bit , update bit. Bit manipulation means bit me changes karna usko mutate karna so we can do all these stuff with the halp of bit manipulation..Bit manipulation is commonly used in computer programming for tasks like optimizing code, working with binary data, and solving algorithmic problems.
+
+Bit- Bit is a building block that allows the computer to store and process the data...Bits are used in computers to reperesent the simplest form of information in computer. Each bit storing a single binary value which is either 0 or 1.
+
 Bit Mask -  Bit mask ek aise technique hai jisme hum binary numbers ke specific bits ko manipulate karte hain, jaise ki aapne kaha, get bit, set bit, clear bit, aur update bit operations ke through. Yeh operations hume allow karte hain ki hum sirf chune hue bits ke saath interact karein, aur baaki ke bits ko as it is rakhein. Is tarah se, bit masking ek powerful tool hai jisse hum binary data ko control aur modify kar sakte hain, aur humare code ko optimize aur efficient banane mein madad karta hai. 
-1) Get Bit - 
+
+1) Get Bit - get bit means bit ko janna ki particular index pe konsi bit hai..
+we are calculating the bit from right to left not the left to right 
+first we need to find the BitMask of any number and here bitmask is - apne binary number ke saath get bit karna set bit karna update karna ye saare operations ko bit masking kehte hain...aur jisme hum ek additional number use karte hain jo BitMask hota hai..
+for calculating bitmask we need to calculate the - 1<<i where i is our position which position we want 
+example - i=2; 
+1<<2 = 0100

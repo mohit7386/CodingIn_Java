@@ -2,7 +2,8 @@
 public class StringBuilder3 {
     public static void main(String[] args) {
         StringBuilder sb = new StringBuilder("hello");
-        for (int i = 0; i < sb.length() / 2; i++) { //when we are reversing a string or anything we only reverse the half of the string rest will automatic reversed 
+        for (int i = 0; i < sb.length() / 2; i++) { // when we are reversing a string or anything we only reverse the
+                                                    // half of the string rest will automatic reversed
             // find the indexes which we want to replace
             int front = i;
             int back = sb.length() - 1 - i; // i is used for incrementing the index and adjusting the index positions

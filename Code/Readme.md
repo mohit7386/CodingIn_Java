@@ -561,5 +561,40 @@ Bit Mask -  Bit mask ek aise technique hai jisme hum binary numbers ke specific 
 we are calculating the bit from right to left not the left to right 
 first we need to find the BitMask of any number and here bitmask is - apne binary number ke saath get bit karna set bit karna update karna ye saare operations ko bit masking kehte hain...aur jisme hum ek additional number use karte hain jo BitMask hota hai..
 for calculating bitmask we need to calculate the - 1<<i where i is our position which position we want 
-example - i=2; 
-1<<2 = 0100
+example - i=2; and n =0101
+1<<2 
+0001<<2 = 0100
+Second step Do operation here we do AND 
+0100 AND 0101
+0100 -> so here agar result non-zero aata hai to bit = 1 and agar zero result aata hai like - 0000 to bit =0
+ 
+2) Set Bit - In set get me hum koi bhi bit hai hamare paas kisi bhi position pe usko hume 1 banana hota hai 
+Step -1 - Calculate BitMask 
+Step -2 - Do Operation - OR
+Example - n=0101 , i(positon) = 1
+1- calculate BitMask - 1<<1
+0001<<1 = 0010
+2- do operation - OR
+0010 OR 0101
+0111 -> here we set the bit on the position = 1 which is second bit aur jab bit ko set karte hain to 0 waali bit ko hum 1 bana dete hain
+
+3) Clear Bit - In clear bit me hum kisi bhi position pe jaake kisi bhi bit ko hum 0 bana dein usko clear bit kehte hain..
+Step 1- Calculate BitMask 
+Step 2- Do Operation AND With NOT
+example - n=0101 , pos(i) = 2 
+1- calculate BitMask - 1<<2
+0001<<2 = 0100
+2- Do Operation NOT with AND
+so, in this case first we calculate the NOT then we calculate the AND 
+~(0100) = 1011
+so now we are calculating the AND 
+1011 & 0101
+0001 = finally we clear the bit means 1 ko zero bana do at the given position = 2
+
+4) Update Bit - In update bit mein kisi bhi bit ko hum 1 bana dein aur kisi bhi bit ko hum zero bana dein 
+so isme basically do operation perform hote hain->
+1- set the bit means 0 bit ko set kro 1 mein kyuki bit ko 1 banane ke liye
+2- clear the bit means 1 ko clear krdo usko zero banao 
+Isme hum user ye uski choice ke according usse puch lenge ki wo 1 ya 0 kisme change karna chahta hai apni bit ko..
+we use these two operations for making the bit 0 or 1..
+

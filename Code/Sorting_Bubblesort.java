@@ -34,15 +34,16 @@ public class Sorting_Bubblesort {
                                                            // ki position change karega
                 if (arr[j] > arr[j + 1]) {
                     // if the first element is greater then the first element then we are swapping
-                    // the both the elements
+                    // both the elements
                     int temp = arr[j];
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
                 }
             }
         }
-        printArray(arr, size);
+        printArray(arr, size); // calling the function
         sc.close();
+        // Time Complexity of a bubble sort is O(n^2) -> Because of nested loops..
 
     }
 

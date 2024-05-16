@@ -597,4 +597,23 @@ so isme basically do operation perform hote hain->
 2- clear the bit means 1 ko clear krdo usko zero banao 
 Isme hum user ye uski choice ke according usse puch lenge ki wo 1 ya 0 kisme change karna chahta hai apni bit ko..
 we use these two operations for making the bit 0 or 1..
+==============================================================================================================================
+Recursion - Recursion is a programming technique where a function calls itself in order to solve a problem. In recursive functions, the solution to a problem is expressed in terms of solutions to smaller instances of the same problem. Recursion consists of two main parts: the base case(s) and the recursive case(s).
+
+Here's why recursion is used in programming:
+
+Simplicity and readability: Recursive solutions can often be simpler and more intuitive than iterative solutions, especially for problems that have a natural recursive structure.
+
+Divide and conquer: Many algorithms and problems can be naturally divided into smaller subproblems. Recursion allows you to solve these subproblems independently and then combine their solutions to solve the larger problem.
+
+Elegant solutions: Recursion can lead to more elegant and concise solutions for certain types of problems, particularly those involving tree structures, graph traversal, or backtracking.
+
+Handling complex data structures: Recursive algorithms are particularly useful for working with complex data structures like trees and graphs, where recursive traversal or search algorithms can be applied effectively.
+
+Mathematical modeling: Recursion is often used in mathematical modeling and problem-solving, where problems can be expressed recursively, such as in the Fibonacci sequence or factorial computation.
+
+However, it's important to note that recursion may not always be the best choice for every problem. Recursive solutions can sometimes be less efficient than iterative solutions due to the overhead of function calls and the potential for stack overflow if not properly managed. Additionally, some recursive algorithms may be harder to understand or debug compared to their iterative counterparts. Therefore, it's essential to consider the trade-offs and characteristics of the problem before opting for a recursive solution.
+
+Recursion when inner loop calculates the value and outer loop or function will print that value..
+Recursion jab ho rahi hogi to memory mein recursive calls stack ki form me stored hoti hain...aur agar hum recursion me base case nahin dein to wo infinite tak chala jaayega jab tak hamari memory bhar nahi jaati hai poori tarah se to isko stack overflow kehte hain...
 

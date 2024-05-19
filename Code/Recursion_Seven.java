@@ -26,6 +26,7 @@ public class Recursion_Seven {
         // Time Complexity = log n - which is optimised time complexity for this
         // question and we are using the Exponentiation by squaring mwthod in which we
         // are halfing the powers to reduce the recursive calls and optimise the
-        // complexity of our code
+        // complexity of our code till - (log n) which is better time complexity as
+        // compare to the O(n).
     }
 }
